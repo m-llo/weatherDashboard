@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title >Weather Dashboard</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Assets/dashboard.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <h1 class="navbar-brand col-lg me-0 px-3 text-center" href="#">Weather Dashboard</h1>
+
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <div class="input-group">
+          <h3>Search for a City</h3>
+          <!-- <button type="button" class="btn btn-primary" id="search">Search</button>
+          <input type="text" class="form-control" id="user-city"></input> -->
+        </div>
+        <div class="input-group">
+          <button type="button" class="btn btn-primary" id="search">Search</button>
+          <input type="text" class="form-control" id="user-city"></input>
+        </div>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Recent Searches</span>
+          
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <div class="list-group" id="saved-cities">
+          <button type="button" class="list-group-item list-group-item-action recent" id="first" data-city="0"></button>
+          <button type="button" class="list-group-item list-group-item-action recent" id="second" data-city="1"></button>
+          <button type="button" class="list-group-item list-group-item-action recent" id="third" data-city="2"></button>
+          <button type="button" class="list-group-item list-group-item-action recent" id="fourth" data-city="3"></button>
+          <button type="button" class="list-group-item list-group-item-action recent" id="fifth" data-city="4"></button>
+        </div>
+        
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2" id="current-city"></h1>
+        <div class="btn-toolbar mb-2 mb-md-0" >
+          <div>
+            <span data-feather="calendar"></span>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="my-4 w-100" width="900" height="380" id="current-weather">
+        <p id='temp'></p>
+        <p id='humidity'></p>
+        <p id='wind'></p>
+        <p class="col-sm-auto" id='uv'></p>
+        <span id='uvindex'></span>
+      </div>
+      <h2 id="daily"></h2>
+      <div class = "container">
+           <div class="row" id="five-day">
+      </div>
+        
+      </div>
+    </main>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" 
+    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" 
+    integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" 
+    crossorigin="anonymous"></script>
+    <script src="./Assets/dashboard.js"></script>
+  </body>
+</html>
