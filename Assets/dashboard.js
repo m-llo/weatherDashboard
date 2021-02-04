@@ -14,6 +14,8 @@ var userCity = cityInput.value;
 
 document.querySelector("#search").addEventListener("click", function () {
     console.log("successful click!");
+    var fiveday = document.querySelector("#five-day");
+    fiveday.innerHTML = "";
     var userCity = cityInput.value;
     console.log(userCity);
     getData(userCity);
