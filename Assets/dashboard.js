@@ -196,7 +196,7 @@ function displayForecast(forecastData) {
         hum.className = 'card-text';
         hum.textContent = "Humidity: " + humidity[i];
         var img = document.createElement('img');
-        img.src = "./assets/images/" + images[i] + ".png";
+        img.src = "./Assets/images/" + images[i] + ".png";
 
         body.appendChild(heading)
         body.appendChild(img)
