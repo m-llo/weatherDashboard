@@ -1,6 +1,6 @@
-var weatherRequestUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
-var uvDataRequestUrl = "http://api.openweathermap.org/data/2.5/uvi?";
-var forecastUrl = "http://api.openweathermap.org/data/2.5/onecall?=";
+var weatherRequestUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
+var uvDataRequestUrl = "https://api.openweathermap.org/data/2.5/uvi?";
+var forecastUrl = "https://api.openweathermap.org/data/2.5/onecall?=";
 var date = luxon.DateTime.local().toFormat('MMMM dd, yyyy');
 var appId = "&appid=a4c652c907710a1f2d2945bf22dbd9fe";
 var forecastAppId = "&354d52307addeb47490a94487c9e0164";
